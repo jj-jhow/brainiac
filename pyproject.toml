@@ -1,0 +1,21 @@
+[project]
+name = "brainiac-server"
+version = "0.1.0"
+description = "MCP Server for Jira, Confluence, and GitHub context"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.26.0",
+    "atlassian-python-api>=4.0.7",
+    "PyGithub>=2.8.1",
+    "python-dotenv>=1.2.1",
+    "fastmcp>=2.14.5",
+    "chromadb>=1.5.0",
+    "sentence-transformers>=5.2.2",
+]
+
+[build-system]
+requires = ["setuptools>=82.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
